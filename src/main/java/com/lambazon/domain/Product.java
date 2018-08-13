@@ -51,8 +51,12 @@ public class Product {
 		return quantity;
 	}
 
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
+	public void setQuantity(int quantity){
+
+		if (quantity < 0){
+		} else {
+			this.quantity = quantity;
+		}
 	}
 
 	public double getPrice() {
@@ -60,11 +64,20 @@ public class Product {
 	}
 
 	public void setPrice(double price) {
-		this.price = price;
+
+		if (price < 0) {
+		} else {
+			this.price = price;
+		}
+		{
+			if (price > 1000) {
+				this.price = 1000;
+			}
+		}
 	}
 
 	public double getInventoryPrice() {
 		// TODO Auto-generated method stub
-		return 0.0;
+		return (quantity * price);
 	}
 }
