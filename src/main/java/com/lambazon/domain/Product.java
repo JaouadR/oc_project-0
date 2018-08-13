@@ -52,7 +52,8 @@ public class Product {
 	}
 
 	public void setQuantity(int quantity){
-
+    //The quantity can not be negative. If a negative value is passed to the setQuantity () method, the quantity attribute will set to 0.
+	//To work, we use the "if" condition.
 		if (quantity < 0){
 		} else {
 			this.quantity = quantity;
