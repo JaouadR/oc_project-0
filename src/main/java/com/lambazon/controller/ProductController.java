@@ -37,7 +37,8 @@ public class ProductController {
 		for (Product p : productService.products()) {
 			totalInventoryAmount+=p.getInventoryPrice();
 		}
-		
+
+		//The total value of the stock displayed on the product page is up to date thanks to the function "return (quantity * price)" which is in the class "Product"
 		return totalInventoryAmount;
 		
 		
