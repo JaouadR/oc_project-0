@@ -65,10 +65,10 @@ public class Product {
 	}
 
 	public void setPrice(double price) {
-		//This price can not be negative, If a negative value is supplied to the setPrice() method, the value will set to O.
+		//This price can't be negative, If a negative value is supplied to the setPrice() method, the value will set to O.
 		if (price < 0) {
 			this.price = 0;
-			//The price can not be greater than 1000, If a value greather than 1000 is provided, the value 1000 is assigned to the price.
+			//The price can't be greater than 1000, If a value greather than 1000 is provided, the value 1000 is assigned to the price.
 		} else if (price > 1000) {
 			this.price = 1000;
 		} else {
