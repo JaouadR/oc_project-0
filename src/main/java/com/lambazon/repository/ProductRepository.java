@@ -24,7 +24,7 @@ public class ProductRepository {
 		products.put(++id, new Product(id, 50, 895.00, "NOKIA OEM BL-5J", "Cell Phone "));
 
 		//Adding 2 products to the list
-		products.put(++id, new Product(id, 80, 998.00, "Apple iPhone X", "Cell Phone "));
+		products.put(++id, new Product(id, -40, 1158.00, "Apple iPhone X", "Cell Phone "));
 		products.put(++id, new Product(id, 50, 98.95, "Jabra Evolve 40 USB UC MS Duo", "Stereo Headphones"));
 	}
 	

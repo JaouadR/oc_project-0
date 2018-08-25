@@ -80,7 +80,7 @@ public class Product {
 
 	public double getInventoryPrice() {
 		// TODO Auto-generated method stub
-		//Repair of the field "Total value of the stock", Multiplication of quantities by prices
+		//Repair of the field "Total value of the stock", Multiplication of Quantities by Prices
 		return (quantity * price);
 	}
 }
